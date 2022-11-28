@@ -69,13 +69,13 @@ default-router 172.15.1.6
 dns-server 8.8.8.8
 
 ip dhcp excluded-address 172.15.1.14
-ip dhcp pool VlanYB
+ip dhcp pool VlanYC
 network 172.15.1.8 255.255.255.248
 default-router 172.15.1.14
 dns-server 8.8.8.8
 
 ip dhcp excluded-address 172.15.1.22
-ip dhcp pool VlanYC
+ip dhcp pool VlanYB
 network 172.15.1.16 255.255.255.248
 default-router 172.15.1.22
 dns-server 8.8.8.8
