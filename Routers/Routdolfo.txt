@@ -82,12 +82,10 @@ dns-server 8.8.8.8
 
 ip route 0.0.0.0 0.0.0.0 G0/1
 
-ip nat pool LAN-EXTERNO 187.45.95.1 187.45.95.30 netmask 255.255.255.224
-
 access-list 101 remark Vlans
 access-list 101 permit ip any any
 
-ip nat inside source list 101 pool LAN-EXTERNO
+ip nat inside source list 101 interface G0/1 overload
 
 router eigrp 2
 network 172.15.0.0 0.0.0.31
