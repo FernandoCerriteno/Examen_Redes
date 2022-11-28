@@ -25,7 +25,6 @@ interface gigabit 0/0
 no ip address
 description Troncal
 no shutdown
-ip access-group 102 in
 
 interface gigabit 0/0.10
 encapsulation dot1Q 10
@@ -56,6 +55,7 @@ ip address dhcp
 description Internet
 no shutdown
 ip nat outside
+ip access-group 102 out
 
 interface serial 0/0/0
 ip address 192.168.0.1 255.255.255.252
