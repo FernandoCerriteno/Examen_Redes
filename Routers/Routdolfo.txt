@@ -83,7 +83,7 @@ dns-server 8.8.8.8
 ip route 0.0.0.0 0.0.0.0 G0/1
 
 access-list 101 remark Vlans
-access-list 101 permit ip any any
+access-list 101 permit ip 172.15.0.0 0.0.0.31 any
 
 ip nat inside source list 101 interface G0/1 overload
 
