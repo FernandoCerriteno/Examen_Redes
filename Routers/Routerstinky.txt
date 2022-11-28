@@ -63,19 +63,19 @@ no shutdown
 ip nat inside
 
 ip dhcp excluded-address 172.15.1.6
-ip dhcp pool VlanX
+ip dhcp pool VlanXA
 network 172.15.1.0 255.255.255.248
 default-router 172.15.1.6
 dns-server 8.8.8.8
 
 ip dhcp excluded-address 172.15.1.14
-ip dhcp pool VlanY
+ip dhcp pool VlanYB
 network 172.15.1.8 255.255.255.248
 default-router 172.15.1.14
 dns-server 8.8.8.8
 
 ip dhcp excluded-address 172.15.1.22
-ip dhcp pool VlanZ
+ip dhcp pool VlanYC
 network 172.15.1.16 255.255.255.248
 default-router 172.15.1.22
 dns-server 8.8.8.8
