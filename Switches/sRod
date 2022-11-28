@@ -58,6 +58,7 @@ no lldp receive
 no lldp transmit
 switchport port-security
 no cdp enable
+spanning-tree portfast
 
 interface range fast0/4
 description vlan 10 vlanX
