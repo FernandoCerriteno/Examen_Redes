@@ -83,8 +83,11 @@ dns-server 8.8.8.8
 
 ip route 0.0.0.0 0.0.0.0 G0/1
 
+time-range
+periodic daily 17:00 to 18:00
+
 access-list 102 remark Minecraft
-access-list 102 permit deny tcp any host any eq 25565
+access-list 102 deny tcp any any eq 25565 time-range
 
 access-list 101 remark Vlans
 access-list 101 permit ip 172.15.1.0 0.0.0.31 any
