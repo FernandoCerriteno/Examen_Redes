@@ -40,7 +40,7 @@ ip add 172.15.0.25 255.255.255.248
 no shutdown
 ip default-gateway 172.15.0.30
 
-interface range fast0/2
+interface fast0/2
 description vlan 20 vlanY
 switchport mode access
 switchport access vlan 20
@@ -50,7 +50,7 @@ switchport port-security
 no cdp enable
 spanning-tree portfast
 
-interface range fast0/3
+interface fast0/3
 description vlan 30 vlanZ
 switchport mode access
 switchport access vlan 30
@@ -60,7 +60,7 @@ switchport port-security
 no cdp enable
 spanning-tree portfast
 
-interface range fast0/4
+interface fast0/4
 description vlan 10 vlanX
 switchport mode access
 switchport access vlan 10
