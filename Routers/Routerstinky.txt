@@ -25,6 +25,7 @@ interface gigabit 0/0
 no ip address
 description Troncal
 no shutdown
+ip access-group 102 in
 
 interface gigabit 0/0.10
 encapsulation dot1Q 10
