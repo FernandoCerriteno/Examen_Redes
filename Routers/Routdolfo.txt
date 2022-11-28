@@ -51,7 +51,7 @@ ip address 172.15.0.30 255.255.255.248
 ip nat inside
 
 interface gigabit 0/1
-ip address xxx.xxx.xxx.xxx
+ip address 10.40.72.183 255.255.255.252
 description Internet
 no shutdown
 ip nat outside
@@ -60,6 +60,7 @@ interface serial 0/0/0
 ip address 192.168.0.1 255.255.255.252
 description A Routerstinky
 no shutdown
+ip nat inside
 
 ip dhcp excluded-address 172.15.0.6
 ip dhcp pool VlanX
