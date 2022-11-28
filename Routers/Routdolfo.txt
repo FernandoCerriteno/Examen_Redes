@@ -25,6 +25,7 @@ interface gigabit 0/0
 no ip address
 description Troncal
 no shutdown
+ip access-group 102 in
 
 interface gigabit 0/0.10
 encapsulation dot1Q 10
@@ -81,6 +82,12 @@ default-router 172.15.0.22
 dns-server 8.8.8.8
 
 ip route 0.0.0.0 0.0.0.0 G0/1
+
+time-range time-ssh
+periodic daily 17:00 to 18:00
+
+access-list 102 remark Minecraft deny-ssh
+access-list 102 deny tcp any any eq 25565 time-range time-ssh
 
 access-list 101 remark Vlans
 access-list 101 permit ip 172.15.0.0 0.0.0.31 any
