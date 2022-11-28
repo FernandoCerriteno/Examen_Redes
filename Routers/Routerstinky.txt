@@ -83,11 +83,11 @@ dns-server 8.8.8.8
 
 ip route 0.0.0.0 0.0.0.0 G0/1
 
-time-range
+time-range time-ssh
 periodic daily 17:00 to 18:00
 
-access-list 102 remark Minecraft
-access-list 102 deny tcp any any eq 25565 time-range
+access-list 102 remark Minecraft deny-ssh
+access-list 102 deny tcp any any eq 25565 time-range time-ssh
 
 access-list 101 remark Vlans
 access-list 101 permit ip 172.15.1.0 0.0.0.31 any
