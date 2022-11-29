@@ -1,3 +1,5 @@
+!clock set 17:55:00 28 NOV 2022
+
 hostname Routerstinky
 
 username cisco secret cisco
